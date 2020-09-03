@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6ce61488-d823-4dfc-abb9-b99a2a211f84" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1gymKaePsGbCf3L6jQnstLp0d9r" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mybatic01_01_quich/src/main/resources/com/neusoft/dao" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\java\java9_ssh_cc\mybatic01_01_quich\src\main\resources\com\neusoft\dao" />
+      <recent name="E:\java\java9_ssh_cc\mybatic01_01_quich\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="MybatisTest1.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatic01_01_quich" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.neusoft.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.neusoft.test" />
+      <option name="MAIN_CLASS_NAME" value="com.neusoft.test.MybatisTest1" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MybatisTest1.test1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6ce61488-d823-4dfc-abb9-b99a2a211f84" name="Default Changelist" comment="" />
+      <created>1599095146034</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599095146034</updated>
+      <workItem from="1599095154648" duration="4900000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="312" y="90" key="#Project_Structure" timestamp="1599099156970">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="312" y="90" key="#Project_Structure/0.0.1440.860@0.0.1440.860" timestamp="1599099156970" />
+    <state x="165" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1599098195602">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="165" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1440.860@0.0.1440.860" timestamp="1599098195602" />
+    <state x="493" y="233" key="FileChooserDialogImpl" timestamp="1599095260433">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="493" y="233" key="FileChooserDialogImpl/0.0.1440.860@0.0.1440.860" timestamp="1599095260433" />
+    <state x="247" y="49" key="SettingsEditor" timestamp="1599095961132">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="247" y="49" key="SettingsEditor/0.0.1440.860@0.0.1440.860" timestamp="1599095961132" />
+    <state x="412" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1599095154636">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="412" y="256" key="com.intellij.ide.util.TipDialog/0.0.1440.860@0.0.1440.860" timestamp="1599095154636" />
+    <state x="64" y="163" width="1259" height="564" key="new project wizard" timestamp="1599095344743">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="64" y="163" width="1259" height="564" key="new project wizard/0.0.1440.860@0.0.1440.860" timestamp="1599095344743" />
+  </component>
+</project>
