@@ -1,13 +1,11 @@
 package com.neusoft.controller;
 
+
 import com.neusoft.domain.Account;
 import com.neusoft.domain.User;
-import com.sun.deploy.net.HttpRequest;
-import org.springframework.http.HttpOutputMessage;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -43,8 +41,6 @@ public class ParaController {
         return "success";
     }
 
-
-
     // 原生serletapi的使用
     @RequestMapping("/testServlet")
     public String testServlet(HttpServletRequest request, HttpServletResponse response){
@@ -54,7 +50,6 @@ public class ParaController {
         System.out.println(hehe);
         return "success";
     }
-
 
 
 
