@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+	<div id="box">
+	        <aaa></aaa>
+	    </div>
+	
+	    <template id="aaa">
+	        <div class="parent">
+	            <p>父组件</p>
+	            <bbb>
+	               <!-- <p slot="my-a1">我是头部aaaaaaa</p> -->
+	                <p slot="my-a2">我是尾部aaaaaaa</p>
+						<p>我是主体1</p>
+		                <p>我是主体2</p>
+		                <p>我是主体3</p>
+		            </bbb>
+		          </div>
+		    </template>
+		    <script>
+		        var vm=new Vue({
+		            el:'#box',
+		            data:{
+		                a:'aaa'
+		            },
+		            components:{
+		                'aaa':{
+		                    data(){
+		                        return {
+		                            msg2:'我是父组件的数据'
+		                        }
+		                    },
+		                    template:'#aaa',
+		                    components:{
+		                        'bbb':{
+		                            template:`
+		                                <div class="child">
+		                                    <p>子组件</p>
+											<hr>
+		                                    <slot name="my-a1">默认值a1</slot>
+		                                    <hr>
+											<hr>
+											<slot name="my-a2">默认值a2</slot>
+											<hr>
+											
+		                                </div>
+		                                `,
+		                        }
+		                    }
+		                }
+		            }
+		        });
+		    </script>
+		
+	</body>
+</html>

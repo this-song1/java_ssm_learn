@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		    <div id="app">
+		       <aaa ></aaa>
+		    </div>
+			<template id="outer">
+		        <div class="container">
+		        	  outer components-------{{msg2}}
+					  <bbb @childmsg="get"></bbb>
+		        </div>
+		    </template>
+			<template id="inner">
+			    <div class="container">
+			    	  inner components-------{{msg}}
+					  <input type="button" value="send" @click="send">
+			    </div>
+			</template>
+		    <script>
+		        //定义全局变量vm
+		        let vm = new Vue({
+		            el: "#app",
+		            data: {
+		                name: "vue.js",
+		            },
+					components:{
+						"aaa":{
+							 template:'#outer',
+							data(){
+							        return {
+							           msg2:'我是父组件的数据'
+							        }
+							      },
+								methods:{
+								       get(msg){
+												this.msg2=msg
+								           }
+										},	    
+							 components:{
+								 "bbb":{
+									 data(){
+									         return {
+									            msg:'我是子组件的数据'
+									         }
+									       },
+									 methods:{
+									        send(){
+													console.log("发送子组件的值")
+									                this.$emit('childmsg',this.msg);
+									            }
+											},	   
+									 template:'#inner',
+								 }
+							 }
+						}
+					}
+		        });
+		    </script>
+		
+		
+		
+	</body>
+</html>

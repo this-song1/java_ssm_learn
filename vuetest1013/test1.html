@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		
+		    <div id="app">
+		       <sayhello></sayhello>
+		    </div>
+		
+			<template id="SayHello">
+		        <div class="container">
+		        	hello SayHello template
+		        </div>
+		    </template>
+		
+		    <script>
+		        //定义全局变量vm
+		        let vm = new Vue({
+		            el: "#app",
+		            data: {
+		                name: "vue.js",
+		            },
+					components:{
+						"sayhello":{
+							 template:'#SayHello'
+						}
+					}
+		        });
+		    </script>
+		
+		
+		
+	</body>
+</html>

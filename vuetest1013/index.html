@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	</head>
+	<body>
+		
+		<div id="app">
+			<input type="button"  value="发送ajax请求" @click="useraxios()" />
+			<input type="text"  v-model="msg" />
+			{{msg}}
+		</div>
+		
+		<script >
+			//定义全局变量vm
+			let vm = new Vue({
+			    el: "#app",
+			    data: {
+			        name: "vue.js",
+					msg:"aaa"
+			    },
+				methods:{
+						useraxios(){
+							axios.post('http://127.0.0.1:8081/getinfo')
+							  .then(response=>{
+								   console.log(this);
+								   console.log(response.data)
+								   this.msg=response.data;
+								    // console.log(this.Vue);
+								 
+									// console.log(this.Vue.msg);
+									// console.log(response);
+							  })
+							  ;
+						}
+						
+				}
+				
+			});
+		</script>
+	
+	
+	
+		
+	</body>
+</html>

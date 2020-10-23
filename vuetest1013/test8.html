@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		
+		<div id="count">
+		    
+		    <child1>
+				
+				
+			</child1>
+		    <child2></child2>
+		    </div>
+			
+		<template id="grandchild">
+			
+			<div>
+				
+							<button @click="showmsg">
+									子子组件
+							</button>
+							{{ msg }}
+			</div>
+			
+		</template>	
+			
+		<template id="child1">
+			
+		  <div>
+			 <grandchild></grandchild>
+			   
+			  </button>
+		    {{ msg }}
+		  </div>
+		
+		</template>
+		<template id="child2">
+		  <div>
+		    {{ msg }}
+		  </div>
+		</template>
+		<script>
+		    Vue.component('child1', {
+		      template: '#child1',
+		      data () {
+		        return {
+		          msg: '这是子组件1的信息'
+		        }
+		      },
+		     
+		      components:{
+		      				"grandchild":{
+		      					 props:['msg'],
+		      					template:'#grandchild',
+								methods: {
+								  showmsg () {
+								     
+														// console.log(this.$children[i].msg)
+											console.log(this)
+											console.log(this.$parent.msg)
+											console.log(this.$parent.$parent.msg)
+											console.log(this.$root.msg)
+														
+								    }
+								  }
+		      				}
+		      }
+		    })
+		    Vue.component('child2', {
+		      template: '#child2',
+		      data () {
+		        return {
+		          msg: '这是子组件2的信息'
+		        }
+		      }
+		    })
+		    new Vue({
+		      el: '#count',
+			  
+		      data: {
+				msg: '这是父组件的信息'
+		      }
+		    })
+		</script>
+		
+		
+	</body>
+</html>

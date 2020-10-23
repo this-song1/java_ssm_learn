@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		
+		<div id="count">
+		    <button @click="showmsg">
+		      显示两个组件的信息
+		    </button>
+		    <child1></child1>
+		    <child2></child2>
+		    </div>
+		<template id="child1">
+			
+		  <div>
+		    {{ msg }}
+		  </div>
+		  
+		</template>
+		<template id="child2">
+		  <div>
+		    {{ msg }}
+		  </div>
+		</template>
+		<script>
+		    Vue.component('child1', {
+		      template: '#child1',
+		      data () {
+		        return {
+		          msg: '这是子组件1的信息'
+		        }
+		      }
+		    })
+		    Vue.component('child2', {
+		      template: '#child2',
+		      data () {
+		        return {
+		          msg: '这是子组件2的信息'
+		        }
+		      }
+		    })
+		    new Vue({
+		      el: '#count',
+		      data: {
+		
+		      },
+		      methods: {
+		        showmsg () {
+		            for(var i = 0; i < this.$children.length; i++) {
+						// console.log(this.$children[i].msg)
+						console.log(this)
+		          }
+		        }
+		      }
+		    })
+		</script>
+		
+		
+	</body>
+</html>
